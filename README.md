@@ -3,6 +3,8 @@
 Для доступа к REST API Bitrix24 запросите у интегратора вебхук, или создайте его самостоятельно на своем портале в разделе Разработчикам-> Другое-> Входящий вебхук.
 Если создаете вебхук самостоятельно выберите методы к которым у вебхука будет доступ. Для создания лидов и сделок потребуется доступ к методам [crm.deal.add](https://dev.1c-bitrix.ru/rest_help/crm/cdeals/crm_deal_add.php), [crm.lead.add](https://dev.1c-bitrix.ru/rest_help/crm/leads/crm_lead_add.php), [crm.contact.list](https://dev.1c-bitrix.ru/rest_help/crm/contacts/crm_contact_list.php) и [crm.contact.add](https://dev.1c-bitrix.ru/rest_help/crm/contacts/crm_contact_add.php).
 
+Полученный вебхук добавляем в файл settings.php в 'C_REST_WEB_HOOK_URL'.
+
 Для вызова методов Rest API Bitrix24 можно использовать метод "call" класса CRest описанный в файле crest.php. Метод принимает в качестве первого аргумента строку - название вызываемого метода, например 'crm.lead.add', а вторым аргументом набор параметров описанных в документации. 
 
 1) Перед созданием лида или сделки необходимо проверить существует ли в crm контакт с таким номером телефона или почтой.
