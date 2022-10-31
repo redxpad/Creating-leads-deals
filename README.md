@@ -1,7 +1,7 @@
 # Creating-leads-deals
 
 Для доступа к REST API Bitrix24 запросите у интегратора вебхук, или создайте его самостоятельно на своем портале в разделе Разработчикам-> Другое-> Входящий вебхук.
-Если создаете вебхук самостоятельно выберите методы к которым у вебхука будет доступ. Для создания лидов и сделок потребуется доступ к методам [crm.deal.add](https://dev.1c-bitrix.ru/rest_help/crm/cdeals/crm_deal_add.php), [crm.lead.add](https://dev.1c-bitrix.ru/rest_help/crm/leads/crm_lead_add.php), [crm.contact.list](https://dev.1c-bitrix.ru/rest_help/crm/contacts/crm_contact_list.php) и [crm.contact.add](https://dev.1c-bitrix.ru/rest_help/crm/contacts/crm_contact_add.php).
+Если создаете вебхук самостоятельно выберите методы к которым у вебхука будет доступ. Для создания лидов и сделок потребуются права на доступ к методам crm.
 
 Полученный вебхук добавляем в файл settings.php в 'C_REST_WEB_HOOK_URL'.
 
